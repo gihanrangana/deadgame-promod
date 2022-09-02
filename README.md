@@ -1,6 +1,6 @@
 ## DeadGame Promod 
 This mode Based on default pml220 mode and this Promod made for Search and Destroy Gamemode
-https://promod.github.io/
+- https://promod.github.io/
 
 ## Required files and folders to run the mod/server
 
