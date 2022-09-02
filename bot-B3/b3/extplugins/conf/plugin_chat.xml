@@ -1,0 +1,74 @@
+<configuration plugin="chat">
+<!--
+|    This plugin will let the console react on certain ingame chat messages.
+|    - The triggers are handled as regular expressions.
+|    - Want to trigger on words? type (foo) as the trigger.
+|    - The triggers are case insensitive.
+|    - You can include multiple <reaction>'s. The bot will randomly pick one.
+|    - This plugin will add a white space before and after the whole sentence
+|    
+|    Some basic regular expression stuff:
+|    ^  = start of line
+|    $  = end of line
+|    \s = whitespace
+|    .  = match any character (1 charachter in length)
+|    *   Preceding expression occurs zero or more times  
+|    ?   Preceding expression occurs zero or one times  
+|    +   Preceding expression occurs one or more times  
+|    [] = match any character inside ([abc] match a or b or c)
+|    () = match the group of characters inside ( (hello) matches 'foohellofoo' and 'foo hello foo' and 'hello' )
+|    |  = an 'or' sign. ( (hi)|(hello) matches '*Hi*' and 'Hello' but not 'Hoi')
+|
+|
+|    Possible variables:
+|      - $player
+-->
+	<messages>
+		<message>
+			<comment>If someone types 'help' without the !</comment>
+			<trigger>^( help )$</trigger>
+			<reaction>Type ^3!help^7 to see all my options $player</reaction>
+		</message>
+		<message>
+			<comment></comment>
+			<trigger>(cheat)</trigger>
+			<reaction>^2Cheaters are the biggest dumbass losers ever!</reaction>
+			<reaction>^2We do NOT like cheaters... hope they make mistakes real soon</reaction>
+			<reaction>^2A good cheater is a dead cheater!</reaction>
+			<reaction>^2Cheaters are like cochroaches, they should be squashed!</reaction>
+		</message>
+		<message>
+			<comment>If someone types 'name foo', console will react and try to help</comment>
+			<trigger>^( name)</trigger>
+			<reaction>^2You should change your name in your multiplayer options $player</reaction>
+		</message>
+		<message>
+			<comment></comment>
+			<trigger>\sh[eoa]*[ij]\s|\sh[ea]+l+o+\s|\sheej?\s|\se+j\s</trigger>
+			<reaction>^2Hi there $player!</reaction>
+			<reaction>^2Hello there yourself $player!</reaction>
+			<reaction>^2Howdy doody $player!</reaction>
+		</message>
+		<message>
+			<comment>Recruiting questions</comment>
+			<trigger>(((cruit)|(join)).*((sop)|(clan)|(you)))|(((sop)|(clan)|(you)).*((cruit)|(join)))</trigger>
+			<reaction>$player ^1If Join ^2Apply in our ^3Discord</reaction>
+		</message>
+		<message>
+			<comment>wesi</comment>
+			<trigger>(wesi)</trigger>
+			<reaction>^1$player ^2wesiya kiyala api hemoma danawa :P</reaction>
+		</message>
+		<message>
+			<comment>Fuck</comment>
+			<trigger>(fuck)|(fucker)</trigger>
+			<reaction>^1$player ^2Fucked ^1Himself</reaction>
+		</message>
+		<message>
+			<comment></comment>
+			<trigger>(hack)|(hacker)|(hackers)</trigger>
+			<reaction></reaction>
+		</message>
+		
+	</messages>
+</configuration>

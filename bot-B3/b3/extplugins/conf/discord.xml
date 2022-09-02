@@ -1,0 +1,8 @@
+<configuration plugin="discord">
+	<settings name="settings">
+		<!-- Set your discord webhook here -->
+		<set name="webhook">https://discord.com/api/webhooks/905922918700183643/vCr2OGlbwG-D4TR4JRqmNRdWFcTLeaozEfgUnWy-REZOYi37PJbzkRNfYfBrXizhR3yI</set>
+        <!-- If you want to force players to supply a reason (!report <player> <reason>), set this to 1 -->
+        <set name="forceReason">1</set>        
+	</settings>
+</configuration>

@@ -1,0 +1,7 @@
+<configuration plugin="website">
+	<settings name="settings">
+		<set name="message">^1No advertising of servers and websites</set>
+		<set name="duration">7d</set>
+		<set name="max_level">15</set>
+	</settings>
+</configuration>

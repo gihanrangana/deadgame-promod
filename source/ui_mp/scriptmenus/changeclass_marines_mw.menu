@@ -1,0 +1,108 @@
+#include "ui/menudef.h"
+#include "ui_mp/common_macro.inc"
+#include "ui_mp/hanu_common.inc";
+
+#include "ui_mp/menustyle.inc"
+#include "ui_mp/choices_setup_teams.menu"
+
+{
+	menuDef
+	{
+		name			"changeclass_marines_mw"
+		rect			0 0 640 480
+		focuscolor		COLOR_FOCUSED
+		style			WINDOW_STYLE_EMPTY
+		blurWorld		7
+		onOpen
+		{
+			setLocalVarInt ui_highlight "";
+			setLocalVarString ui_team "marines";
+			exec "set menuName Welcome";
+		}
+		onEsc
+		{
+			close self;
+		}
+
+		#include "ui_mp/menu_frame.inc";
+		itemDef 
+		{
+			// 570 - 330 = 240
+			name			"mini_map2"
+			rect			330 100 220 180
+			background		"compass_map_default"
+			ownerdraw		CG_PLAYER_FULLMAP_MAP
+			forecolor		1 1 1 1
+			visible			1
+			decoration
+		}
+		itemDef 
+		{
+			// 570 - 330 = 240
+			rect			330 100 220 180
+			style			WINDOW_STYLE_SHADER
+			name			"mini_map2_overlay"
+			exp				material( tableLookup( "mp/mapsTable.csv", 0, dvarString( mapname ), 7 ) )
+			forecolor		1 1 1 1
+			visible			1
+			decoration
+		}
+		itemDef 
+		{
+			// 570 - 330 = 240
+			name			"compasspointers2"
+			rect			330 100 220 180
+			background		"objective_line"
+			ownerdraw		CG_PLAYER_FULLMAP_POINTERS
+			forecolor		1 1 1 1
+			visible			1
+			decoration
+		}
+		itemDef 
+		{
+			name			"compassfriendlies2"
+			rect			330 100 220 180
+			background		"compassping_friendly"
+			ownerdraw		CG_PLAYER_FULLMAP_FRIENDS
+			forecolor		1 1 1 1
+			visible			1
+			decoration
+		}
+		itemDef 
+		{
+			// 570 - 330 = 240
+			name			"compassenemies2"
+			rect			330 100 220 180
+			background		"compassping_enemy"
+			ownerdraw		CG_PLAYER_FULLMAP_ENEMIES
+			forecolor		1 1 1 1
+			visible			when( dvarbool( ui_hud_hardcore ) == 0  );
+			decoration
+		}
+		itemDef 
+		{
+			// 570 - 330 = 240
+			name			"compassplayer2"
+			rect			330 100 220 180
+			background		"compassping_player"
+			ownerdraw		CG_PLAYER_FULLMAP_PLAYER
+			forecolor		1 1 1 1
+			visible			when ( team( name ) != "TEAM_FREE" );
+			decoration
+		}
+
+		ADD_BUTTON( "0", 100, 110, 180, 20, "1. Assault", 		scriptMenuResponse "assault";, when( dvarBool( allies_allow_assault ) || dvarString( loadout_curclass ) == "assault" )  )
+		ADD_BUTTON( "1", 100, 135, 180, 20, "2. Spec Ops", 		scriptMenuResponse "specops";, when( dvarBool( allies_allow_specops ) || dvarString( loadout_curclass ) == "specops" )  )
+		ADD_BUTTON( "2", 100, 160, 180, 20, "3. Demolitions", 	scriptMenuResponse "demolitions";, when( dvarBool( allies_allow_demolitions ) || dvarString( loadout_curclass ) == "demolitions" )  )
+		ADD_BUTTON( "3", 100, 185, 180, 20, "4. Sniper", 		scriptMenuResponse "sniper";, when( dvarBool( allies_allow_sniper ) || dvarString( loadout_curclass ) == "sniper" )  )
+		
+		ADD_BUTTON( "4", 100, 220, 180, 20, "5. Spectate Team", scriptMenuResponse "killspec";,1  )
+		ADD_BUTTON( "5", 100, 245, 180, 20, "6. Leave Game", 	open popup_leavegame;, 1)
+		
+		execKey "1" { scriptMenuResponse "assault"; }
+		execKey "2" { scriptMenuResponse "specops"; }
+		execKey "3" { scriptMenuResponse "demolitions"; }
+		execKey "4" { scriptMenuResponse "sniper"; }
+		execKey "5" { scriptMenuResponse "killspec"; }
+	}
+}

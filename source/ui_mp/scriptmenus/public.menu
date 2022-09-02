@@ -1,0 +1,68 @@
+#include "ui/menudef.h"
+#include "ui_mp/common_macro.inc"
+
+#define CHOICE_SIZE_X			150
+#define CHOICE_SIZE_Y			22
+
+#define CHOICE_X_START			0
+#define CHOICE_Y_START			190
+
+#include "ui_mp/menustyle.inc"
+#include "ui_mp/choices_setup_teams.menu"
+
+#include "ui_mp/public_common.inc";
+{
+	menuDef
+	{
+		name			"public"
+		rect			0 0 640 480
+		focuscolor		COLOR_FOCUSED
+		style			WINDOW_STYLE_EMPTY
+		blurWorld		7
+		onOpen
+		{
+			execNow "set page_num 0";
+			execnow	"set menuName ^1Filmtweaks";
+			focusFirst;
+		}
+		onEsc
+		{
+			close self;
+		}
+		
+		
+		itemDef
+        {
+            rect                      195 80 0 0 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            textFont                  UI_FONT_NORMAL
+            textAlign                 ITEM_ALIGN_LEGACY_RIGHT
+            textScale                 0.6
+            exp                       text ( ( dvarstring( "menuName" ) ) );
+            visible 1                 
+            decoration                
+        }
+	
+		#undef TEXT_ALIGN_WHERE
+		#undef TEXT_ALIGN_AXIS
+		#undef FONT_ITEM_SIZE
+		
+		#define TEXT_ALIGN_WHERE	ITEM_ALIGN_MIDDLE_LEFT
+		#define TEXT_ALIGN_AXIS		6
+		#define FONT_ITEM_SIZE		0.38
+		
+		MENU_BUTTON(15, 80, 100, 180, 20, "| Crash", 		close self;scriptMenuResponse tweak_1;, 1 )
+		MENU_BUTTON(16, 80, 125, 180, 20, "| Crossfire", 	close self;scriptMenuResponse tweak_2;, 1 )
+		MENU_BUTTON(17, 80, 150, 180, 20, "| District", 	close self;scriptMenuResponse tweak_3;, 1 )
+		MENU_BUTTON(18, 80, 175, 180, 20, "| District 2", 	close self;scriptMenuResponse tweak_4;, 1 )
+		MENU_BUTTON(19, 80, 200, 180, 20, "| Dark Tweaks", 	close self;scriptMenuResponse tweak_5;, 1 )
+		MENU_BUTTON(20, 80, 225, 180, 20, "| Universal", 	close self;scriptMenuResponse tweak_6;, 1 )
+		MENU_BUTTON(21, 80, 250, 180, 20, "| Bright", 		close self;scriptMenuResponse tweak_7;, 1 )
+		MENU_BUTTON(22, 80, 275, 180, 20, "| Soft", 		close self;scriptMenuResponse tweak_8;, 1 )
+		MENU_BUTTON(23, 80, 300, 180, 20, "| Normal", 		close self;scriptMenuResponse tweak_9;, 1 )
+		
+		
+		#undef 	ALIGN_BUTTON
+		#define ALIGN_BUTTON	HORIZONTAL_ALIGN_CENTER 0
+	
+	}
+}

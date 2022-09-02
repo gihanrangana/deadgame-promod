@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<B3Status Time="Thu Sep  1 08:25:00 2022">
+        <Game CaptureLimit="" FragLimit="" Ip="139.99.89.136" Map="mp_killhouse" MapTime="1894" Name="cod4" OnlinePlayers="0" Port="28960" RoundTime="144" Rounds="9595" TimeLimit="" Type="sd">
+                <Data Name="protocol" Value="21"/>
+                <Data Name="gameName" Value="cod4"/>
+                <Data Name="sv_privateClients" Value="0"/>
+                <Data Name="sv_maxRate" Value="25000"/>
+                <Data Name="_mapTimeStart" Value="1662018806"/>
+                <Data Name="rounds" Value="9595"/>
+                <Data Name="_mapName" Value="mp_killhouse"/>
+                <Data Name="sv_disableClientConsole" Value="0"/>
+                <Data Name="uptime" Value="16 days"/>
+                <Data Name="console" Value="&lt;b3.parsers.cod4x18.Cod4X18Parser object at 0x7f3f284b9c90&gt;"/>
+                <Data Name="gamename" Value="Call of Duty 4"/>
+                <Data Name="version" Value="CoD4 X - linux-i386 build 1154 May  1 2022"/>
+                <Data Name="build" Value="1154"/>
+                <Data Name="branch" Value="master"/>
+                <Data Name="sv_pure" Value="1"/>
+                <Data Name="_roundTimeStart" Value="1662020556"/>
+                <Data Name="_CoD4 X Site" Value="http://cod4x.ovh"/>
+                <Data Name="revision" Value="0beb470e43b71d1567d068518a61f8003870176d"/>
+                <Data Name="sv_voice" Value="0"/>
+                <Data Name="modName" Value="mods/deadgame_pm"/>
+                <Data Name="sv_minPing" Value="0"/>
+                <Data Name="sv_maxclients" Value="18"/>
+                <Data Name="sv_hostname" Value="^5Dead^1.^5Game ^1Promod  "/>
+                <Data Name="sv_floodprotect" Value="4"/>
+                <Data Name="_Location" Value="SriLanka"/>
+                <Data Name="g_compassShowEnemies" Value="0"/>
+                <Data Name="g_mapStartTime" Value="Thu Sep  1 07:53:24 2022"/>
+                <Data Name="_Website" Value="deadgame.xyz"/>
+                <Data Name="gameType" Value="sd"/>
+                <Data Name="_Admin" Value="DeeP"/>
+                <Data Name="shortversion" Value="-"/>
+                <Data Name="g_logTimeStampInSeconds" Value="0"/>
+                <Data Name="sv_maxPing" Value="300"/>
+        </Game>
+        <Clients Total="0"/>
+</B3Status>

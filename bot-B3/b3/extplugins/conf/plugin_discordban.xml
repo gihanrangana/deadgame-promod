@@ -1,0 +1,6 @@
+<configuration plugin="discordban">
+  <settings name="authentication">
+    <set name="webhookUrl">https://discord.com/api/webhooks/905922918700183643/vCr2OGlbwG-D4TR4JRqmNRdWFcTLeaozEfgUnWy-REZOYi37PJbzkRNfYfBrXizhR3yI</set> 
+	<set name="hostname">DeeP Promod LK</set>
+  </settings>
+</configuration>

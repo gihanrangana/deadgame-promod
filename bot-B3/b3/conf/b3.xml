@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--BigBrotherBot - http://bigbrotherbot.net - BigBrotherBot Config File Generator - Author: Freelander (Özgür Uysal) - http://ozguruys.al-->
+<!--Created by BigBrotherBot v1.10+ Config File Generator(v PB3.1) (30 May 2019 - Thu 07:10:14 UTC)-->
+<configuration>
+  <settings name="b3">
+    <set name="bot_name">b3</set>
+    <set name="bot_prefix"></set>
+    <set name="time_format">%I:%M%p %Z %m/%d/%y</set>
+    <set name="time_zone">IST</set>
+    <set name="log_level">9</set>
+    <set name="logfile">@conf/b3.log</set>
+    <set name="parser">cod4x18</set>
+    <set name="database">mysql://user:password@localhost/b3_db</set>
+  </settings>
+  <settings name="server">
+    <set name="rcon_password">cod4123</set>
+    <set name="port">28960</set>
+    <set name="public_ip">139.99.89.136</set>
+    <set name="rcon_ip">127.0.0.1</set>
+    <set name="delay">0.33</set>
+    <set name="lines_per_second">50</set>
+    <set name="max_line_length">65</set>
+    <set name="punkbuster">off</set>
+    <set name="game_log">/home/cod4/mods/deadgame_pm/games_mp.log</set>
+  </settings>
+  <settings name="autodoc">
+    <set name="type">html</set>
+    <set name="maxlevel">100</set>
+    <set name="destination">@conf/b3_doc.html</set>
+  </settings>
+  <settings name="update">
+    <set name="channel">stable</set>
+  </settings>
+  <settings name="messages">
+    <set name="kicked_by">$clientname^7 was kicked by $adminname^7 $reason</set>
+    <set name="kicked">$clientname^7 was kicked $reason</set>
+    <set name="banned_by">$clientname^7 was banned by $adminname^7 $reason</set>
+    <set name="banned">$clientname^7 was banned $reason</set>
+    <set name="temp_banned_by">$clientname^7 was temp banned by $adminname^7 for $banduration^7 $reason</set>
+    <set name="temp_banned">$clientname^7 was temp banned for $banduration^7 $reason</set>
+    <set name="unbanned_by">$clientname^7 was un-banned by $adminname^7 $reason</set>
+    <set name="unbanned">$clientname^7 was un-banned $reason</set>
+  </settings>
+  <settings name="plugins">
+    <set name="external_dir">@b3/extplugins</set>
+  </settings>
+  <plugins>
+    <plugin name="admin" config="@conf/plugin_admin.ini"/>
+    <plugin name="adv" config="@conf/plugin_adv.xml"/>
+    <plugin name="customcommands" config="@conf/plugin_customcommands.ini"/>
+    <plugin name="geowelcome" config="@conf/plugin_geowelcome.ini"/>
+    <plugin name="location" config="@conf/plugin_location.ini"/>
+    <plugin name="spamcontrol" config="@conf/plugin_spamcontrol.ini"/>
+    <plugin name="welcome" config="@conf/plugin_welcome.ini"/>
+    <plugin name="xlrstats" config="@b3/conf/plugin_xlrstats.ini"/>
+    <plugin name="pingwatch" config="@conf/plugin_pingwatch.ini"/>
+    <plugin name="spree" config="@conf/plugin_spree.ini"/>
+    <plugin name="status" config="@conf/plugin_status.ini"/>
+    <plugin name="website" config="@b3/extplugins/conf/plugin_website.xml"/> 
+    <plugin name="chat" config="@b3/extplugins/conf/plugin_chat.xml"/> 
+    <plugin name="auth" config="@b3/extplugins/conf/plugin_auth.xml"/>-->
+    <plugin name="codxcommands" config="@b3/extplugins/conf/plugin_codxcommands.xml"/> 
+    <plugin name="cod4xasciiname" config="none"/> 
+    <plugin name="vpnblocker" config="@b3/extplugins/conf/vpnblocker.ini"/>
+<!--    <plugin name="countryfilter" config="@conf/plugin_countryfilter.ini"/> -->
+  </plugins>
+</configuration>

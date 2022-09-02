@@ -1,0 +1,12 @@
+<configuration plugin="auth">
+	<settings name="commands">
+		<set name="auth">2</set>
+	</settings>
+
+	<!-- Set passwords for groups that need them -->
+	<settings name="passwords">
+	<!--<set name="60">here_comes_the_pass_for_60</set>-->
+	<!--<set name="80">here_comes_the_pass_for_80</set>-->
+	<!--<set name="100">here_comes_the_pass_for_100</set>-->
+	</settings>
+</configuration>
