@@ -18,6 +18,10 @@ IWD files contain /images, /sounds and /weapons
 - Custom UI
 - Admin menu
 - Player menu
+- Flags
+- Killcard
+- Endround Music
+- Mapvote
 
 To use Admin menu need to install b3 on your server and type !leader playername then type !panel to open Admin menu
 
