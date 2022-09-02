@@ -25,6 +25,7 @@ Put GeoIP.bat file to your cod4 server files directory
 - Killcard
 - Endround Music
 - Mapvote
+- Custom Game rounds ex(crossbow only, sniper only)
 
 To use Admin menu need to install b3 on your server and type !leader playername then type !panel to open Admin menu
 
