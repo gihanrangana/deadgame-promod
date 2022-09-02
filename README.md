@@ -1,5 +1,5 @@
 ## DeadGame Promod 
-This mode Based on default PML220 mode
+This mode Based on default pml220 mode
 https://promod.github.io/
 
 ## Required files and folders to run the mod/server
@@ -15,6 +15,7 @@ https://promod.github.io/
 - / .iwd files, depending how you split the assets
 
 IWD files contain /images, /sounds and /weapons
+Put GeoIP.bat file to your cod4 server files directory
 
 ## Features
 - Custom UI
