@@ -14,6 +14,21 @@
 
 IWD files contain /images, /sounds and /weapons
 
+## Features
+- Custom UI
+- Admin menu
+- Player menu
+
+To use Admin menu need to install b3 on your server and type !leader playername then type !panel to open Admin menu
+
+
+![Call of Duty 4  Modern Warfare Screenshot 2022 09 02 - 13 50 39 52](https://user-images.githubusercontent.com/90983788/188097859-0e3b5946-dcf3-43b0-9544-7c27bca14d16.png)
+![Call of Duty 4  Modern Warfare Screenshot 2022 09 02 - 13 52 22 45](https://user-images.githubusercontent.com/90983788/188097870-a705db25-2ab0-414d-bdcd-df75422c3edf.png)
+![Call of Duty 4  Modern Warfare Screenshot 2022 09 02 - 13 53 08 59](https://user-images.githubusercontent.com/90983788/188097878-2bf95de2-f3b6-4edd-989c-0541a0a2adeb.png)
+
+
+
 ## Have fun
 
 Thanks to everyone who contributed to this cod4 promod. This mode/code isn't fully made or written by me this is mixed of some other relesed cod4 promod mods 
+
