@@ -38,5 +38,9 @@ To use Admin menu need to install b3 on your server and type !leader playername 
 
 ## Have fun
 
-Thanks to everyone who contributed to this cod4 promod. This mode/code isn't fully made or written by me this is a mixed of some other released cod4 promod mods 
+Thanks to everyone who contributed to this cod4 promod. This mode/code isn't fully made or written by me this is a mixed of some other released cod4 promod mods.
+
+- Ebc Promod
+- Royal soldiers Promod
+- Criminal Promod 
 
