@@ -1,4 +1,6 @@
 ## DeadGame Promod 
+This mode Based on default PML220 mode
+https://promod.github.io/
 
 ## Required files and folders to run the mod/server
 
